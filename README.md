@@ -7,9 +7,6 @@ This repository contains the codebase for a tutorial on creating a frontend appl
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -33,4 +30,10 @@ Before you get started, ensure that you have the following prerequisites install
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/yourusername/mint-nft-frontend.git
+   cd mint-nft-frontend
+   npm install
+
+2. Run the application in localhost:
+   ```bash
+   npm run dev
