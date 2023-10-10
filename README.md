@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Solana NFT Minting Frontend Tutorial
 
-## Getting Started
+This repository contains the codebase for a tutorial on creating a frontend application to mint NFTs on the Solana blockchain using CandyMachine and Umi. Follow this guide to learn how to build a decentralized minting platform for non-fungible tokens (NFTs).
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+In this tutorial, we will demonstrate how to create a frontend application that interacts with the Solana blockchain to facilitate NFT minting. The core components of this project include:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **CandyMachine**: A Solana program for managing NFT minting and distribution.
+- **Umi**: A JavaScript framework for building scalable and efficient web applications.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Follow the steps outlined in this tutorial to set up your environment, configure the frontend, and create a CandyMachine to mint NFTs on Solana.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Prerequisites
 
-## Learn More
+Before you get started, ensure that you have the following prerequisites installed on your system:
 
-To learn more about Next.js, take a look at the following resources:
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
+- [Solana CLI](https://docs.solana.com/cli/installation)
+- [Metaplex Candy Machine CLI](https://github.com/metaplex-foundation/metaplex/tree/master/js/packages/cli)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone this repository to your local machine:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
