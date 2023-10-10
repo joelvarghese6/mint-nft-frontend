@@ -55,7 +55,7 @@ const Connected: FC = () => {
 
         <Button bgColor="accent" color="white" maxW="380px" onClick={onClick}>
           <HStack>
-            <Text>mint buildoor</Text>
+            <Text>mint NFT</Text>
             <ArrowForwardIcon />
           </HStack>
         </Button>

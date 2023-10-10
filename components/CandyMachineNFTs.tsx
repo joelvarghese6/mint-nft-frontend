@@ -13,47 +13,15 @@ import {
 const CandyMachineNFTs: FC = () => {
     const { connection } = useConnection();
 
-    const [candyMachineAddress, setCandyMachineAddress] = useState("6DiJS6qSKSWwrPgiqxzKYLqsXTha2Nmwi7kPZzhQvm89")
+    const [candyMachineAddress, setCandyMachineAddress] = useState("")
     const [candyMachineData, setCandyMachineData]: any = useState(null)
     const [pageItems, setPageItems]: any = useState(null)
     const [page, setPage] = useState(1)
     const metaplex = Metaplex.make(connection)
 
-    const fetchCandyMachine = async () => {
+    const fetchCandyMachine = async () => {}
 
-        // Set page to 1 - we wanna be at the first page whenever we fetch a new Candy Machine
-        setPage(1)
-
-        // fetch candymachine data
-        try {
-            const candyMachine = await metaplex
-                .candyMachinesV2()
-                .findByAddress({ address: new PublicKey(candyMachineAddress) })
-
-            setCandyMachineData(candyMachine)
-        } catch (e) {
-            alert("Please submit a valid CMv2 address.")
-        }
-    }
-
-    const getPage = async (page: number, perPage: number) => {
-        const pageItems = candyMachineData.items.slice(
-            (page - 1) * perPage,
-            page * perPage
-        )
-
-        // fetch metadata of NFTs for page
-        let nftData = []
-        for (let i = 0; i < pageItems.length; i++) {
-            let fetchResult = await fetch(pageItems[i].uri)
-            let json = await fetchResult.json()
-            nftData.push(json)
-        }
-
-        // set state
-        console.log(nftData)
-        setPageItems(nftData)
-    }
+    const getPage = async (page: number, perPage: number) => {}
 
     const prev = async () => {
         if (page - 1 < 1) {

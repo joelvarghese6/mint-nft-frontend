@@ -40,7 +40,7 @@ const Disconnected: FC = () => {
           noOfLines={2}
           textAlign="center"
         >
-          Mint your buildoor. Earn $BLD. Level up.
+          Connect your wallet to mint your NFT
         </Heading>
         <Button
           bgColor="accent"
